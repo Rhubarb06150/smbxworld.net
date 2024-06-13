@@ -1,0 +1,337 @@
+.header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+    width: 100%;
+    min-width: max-content;
+    background-image: url("/images/bgs/header-bg.png");
+    background-color: #212121;
+    image-rendering: pixelated;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+.useless_row {
+    color:inherit;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-break: anywhere;
+}
+
+.line {
+    width: 100%;
+    border-top: 1px #404040 solid;
+}
+
+@media only screen and (max-width: 700px) {
+    #website-logo {
+        width: auto;
+        height: auto;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_title{
+        font-size: 87%;
+    }
+    .useless_row {      
+        display: none;
+    }
+
+}
+
+.profile_picture {
+    max-width: 128px;
+    min-width: 128px;
+    max-height: 128px;
+    min-height: 128px;
+    border: #884343 2px solid;
+}
+
+.page_structure {
+    margin-top: 10px;
+    margin-left: 2px;
+    display: flex;
+    margin-bottom: 32px;
+    width: calc(100% - 15px);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+body {
+    background-image: url("/images/bgs/dark-bg.png");
+    background-color: #454545;
+    image-rendering: pixelated;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    min-height: 100vh;
+}
+
+span {
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+}
+
+p {
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    color: #ffffff;
+    margin: 0px;
+}
+
+textarea {
+    background-color: #454545;
+    color: #ffffff;
+    max-width: 100%;
+    max-height: 100%;
+    resize: none;
+}
+
+input {
+    background-color: #454545;
+    color: #ffffff;
+}
+
+.entry_and_labels {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    background-color: #900000;
+    padding: 5px;
+    border: #884343 2px solid;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.button:hover {
+    filter: brightness(150%) saturate(200%);
+    border: #ffffff 2px solid;
+}
+
+.section_title {
+    margin-left: 5px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    color: #ffffff;
+    font-size: 175%;
+    /* filter: drop-shadow(#000000 0px 0px 5px);*/
+    width: max-content;
+}
+
+.little_section_title {
+    margin-left: 5px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    color: #ffffff;
+    font-size: 100%;
+    filter: drop-shadow(#00000050 2px 2px 0px);
+    text-decoration: underline;
+    width: max-content;
+}
+
+.elements {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.element {
+    border: #884343 2px solid;
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    margin-bottom: 10px;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+}
+
+.reply {
+    border-top: #554343 2px solid;
+}
+
+.element_title {
+    background-color: #900000;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 110%;
+    font-weight: bold;
+    line-break: auto;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+}
+
+.element_infos {
+    background-color: #3f1d1d;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 70%;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    line-break: auto;
+}
+
+.element_content {
+    padding: 5px;
+    background-color: #532727;
+    color: #ffffff;
+    line-break: auto;
+    font-size: 85%;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+}
+
+select {
+    background-color: #454545;
+    color: #ffffff;
+}
+
+;
+
+.thumbnail {
+    border: #884343 2px solid;
+}
+
+.menu {
+    border: #884343 2px solid;
+    background-color: #900000;
+    width: 120px;
+    min-height: 16px;
+    color: #ffffff;
+    padding-left: 5px;
+    margin-left: 2px;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+    display: flex;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 5px;
+}
+
+table {
+    border: #884343 2px solid;
+    padding: 0px;
+    margin: 0px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 5px;
+    border: #884343 2px solid;
+}
+
+td {
+    border: #884343 2px solid;
+    text-align: center;
+    padding: 5px;
+}
+
+.green {
+    color: #33ff00;
+}
+
+.menu_img {
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.website_img {
+    width: 88px;
+    height: 31px;
+    filter: saturate(50%) contrast(75%);
+    margin: 0px;
+    padding: 0px;
+}
+
+.website_img:hover {
+    filter: contrast(100%);
+}
+
+.menu_options {
+    border-right: #884343 2px solid;
+    border-left: #884343 2px solid;
+    background-color: #532727;
+    width: 114px;
+    padding-left: 10px;
+    display: flex;
+    margin-left: 8px;
+    flex-direction: column;
+    line-break: anywhere;
+}
+
+.menu_options_websites {
+    border-right: #884343 2px solid;
+    border-left: #884343 2px solid;
+    border-bottom: #884343 2px solid;
+    background-color: #532727;
+    padding-top: 4px;
+    width: 122px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_options_link {
+    color: #ffffff;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 85%;
+    font-family: Verdana, Helvetica, Arial, Sans-Serif;
+}
+
+a {
+    color: #ffff00;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link {
+    color: #ffff00;
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: #ffff00;
+    text-decoration: none;
+}
+
+.infos {
+    font-size: 85%;
+    color: #aaaaaa;
+    font-style: italic;
+}
+
+a:hover {
+    color: #ff7500;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 0px;
+    background-image: url("/images/bgs/header-bg.png");
+    background-attachment: fixed;
+    background-color: #212121;
+}
+
+.footer_content {
+    padding: 14px;
+    background-attachment: fixed;
+}
